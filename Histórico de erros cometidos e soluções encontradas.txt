@@ -1,0 +1,50 @@
+Caso 1:
+
+$git /c/
+
+Neste passo eu acabei saindo do diretório e não consegui entrar no diretório raiz novamente. O passo que me faltava era inserir "/" antes do nome do diretório raiz "c".
+Ou seja, eu digitava o comando => $ git c/Fernando/... 
+Demorei um pouco para achar o erro que estava cometendo, e depois de olhar toda a linha que havia digitado no Git Bash, pude notar um simples "/" faltando antes do raiz => $git /c/Fernando/...
+
+
+
+
+Caso 2:
+
+Após conseguir voltar à pasta onde estava o meu repositório, não conseguia entrar no Repositório pelo Git Bash, pois o nome da pasta tinha "espaços" (Desafio Git-GitHub 1).
+Demorei mais tempo que no caso anterior e não achei a resposta na internet. Lembrei de perguntar ao CHATGPT:
+
+
+
+Fernando Bello
+qual comando git utilizo para entrar neste local 'Desafio Git-GitHub 1'/
+
+Para entrar no diretório "Desafio Git-GitHub 1" usando o Git, você deve usar o comando "cd" (change directory) seguido do caminho para o diretório. Se o diretório está dentro do seu repositório Git, primeiro você precisa navegar até o diretório raiz do repositório. Em seguida, você pode usar o comando "cd" para entrar no diretório "Desafio Git-GitHub 1".
+
+Supondo que o diretório raiz do seu repositório é ~/meu-repositorio/, você pode entrar no diretório "Desafio Git-GitHub 1" usando o seguinte comando:
+
+bash
+Copy code
+cd ~/meu-repositorio/Desafio\ Git-GitHub\ 1/
+Observe que usamos o caractere de barra invertida () para escapar os espaços no nome do diretório. Isso é necessário porque o shell (como o Bash) interpreta os espaços como separadores de argumentos.
+
+
+
+
+Fernando Bello
+qual linha git para entrar em : /c/Fernando/DIO/'Desafio\Git-GitHub\1'
+
+Para navegar para o diretório "/c/Fernando/DIO/Desafio Git-GitHub 1" no Git Bash, você pode usar o comando "cd" (change directory).
+
+Supondo que você esteja no diretório raiz do seu sistema de arquivos, você pode navegar para o diretório "Desafio Git-GitHub 1" usando o seguinte comando:
+
+bash
+Copy code
+cd /c/Fernando/DIO/Desafio\ Git-GitHub\ 1
+Observe que usamos o caractere de barra invertida () para escapar os espaços no nome do diretório. Isso é necessário porque o shell (como o Bash) interpreta os espaços como separadores de argumentos.
+
+
+
+
+
+Agora entendi os erros. São EXTREMAMENTE importantes para fixar os "segredinhos" da programação.
